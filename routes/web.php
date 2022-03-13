@@ -6,10 +6,17 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('web', 'auth')->group(function() {
+    // Rotas administrador
+    Route::group([
+        'prefix' => 'admin',
+        'as' => 'admin.',
+    ], function () {
+        Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+        Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
+    });
 
 
-    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-    Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
+
 });
 
 //Auth::routes();

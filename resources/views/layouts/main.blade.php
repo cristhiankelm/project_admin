@@ -54,7 +54,9 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Desenvolvido por <a target="_blank" href="http://https://www.cristhiankelm.me"></a></span>
+                        <span>Desenvolvido por <a target="_blank"
+                            href="https://cristhiankelm.me/">Cristhian Kelm</a></span>
+                            <br><span>Versão: <b>1.0</b></span>
                     </div>
                 </div>
             </footer>
