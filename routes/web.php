@@ -5,8 +5,8 @@ use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('web', 'auth')->group(function() {
-    // Rotas administrador
+Route::middleware( 'auth')->group(function() {
+//    Rotas administrador
     Route::group([
         'prefix' => 'admin',
         'as' => 'admin.',
@@ -14,6 +14,11 @@ Route::middleware('web', 'auth')->group(function() {
         Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
         Route::get('/', [HomeController::class, 'dashboard'])->name('dashboard');
     });
+
+    //Rotas resource para os CRUD
+    // Route::resources([
+    //     'customers' => CustomerController::class
+    // ]);
 
 
 

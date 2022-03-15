@@ -41,6 +41,22 @@
         </div>
     </li>
 
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseWeb"
+           aria-expanded="true" aria-controls="collapseWeb">
+            <i class="fas fa-fw fa-php"></i>
+            <span>Web</span>
+        </a>
+        <div id="collapseWeb" class="collapse" aria-labelledby="headingWeb" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Custom Web</h6>
+                <a class="collapse-item" href="#">*</a>
+                <a class="collapse-item" href="#">*</a>
+            </div>
+        </div>
+    </li>
+
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
@@ -63,7 +79,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Addons
+        Complementos
     </div>
 
 
