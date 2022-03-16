@@ -29,7 +29,7 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-        @include('partials.sidebar')
+        @include('admin.partials.sidebar')
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -37,7 +37,7 @@
             <!-- Main Content -->
             <div id="content">
 
-                @include('partials.topbar')
+                @include('admin.partials.topbar')
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
